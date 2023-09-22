@@ -1,6 +1,6 @@
 ---
 # tasks file for /etc/ansible/roles/ntp-config
-- name: Install chrony if note installed
+- name: Install chrony if not installed
   become: yes
   yum:
     name: chrony
